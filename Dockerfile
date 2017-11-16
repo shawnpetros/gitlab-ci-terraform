@@ -1,7 +1,8 @@
 FROM alpine:latest
-MAINTAINER "Jonatan Bjork <jonatan@jonatanblue.se>"
+# MAINTAINER "Jonatan Bjork <jonatan@jonatanblue.se>" adapted from his original work
+MAINTAINER "Shawn Petros <shawn.petros@gmail.com>"
 
-ENV TERRAFORM_VERSION=0.10.8
+ENV TERRAFORM_VERSION=0.11.0
 ENV TERRAFORM_FILENAME=terraform_${TERRAFORM_VERSION}_linux_amd64.zip
 ENV TERRAFORM_URL=https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/${TERRAFORM_FILENAME}
 ENV TERRAFORM_SHA256SUM=b786c0cf936e24145fad632efd0fe48c831558cc9e43c071fffd93f35e3150db
